@@ -18,14 +18,14 @@
                     break;
                 }
             }
-            int meio = (num / 2)+1;
+            int meio = (num / 2) + 1;
             int quantidadeHashtag = 1;
             int[,] matriz = new int[num, num];
             for (int i = 0; i < meio; i++)
             {
                 for (int j = 0; j < num; j++)
                 {
-                    if (j >= meio - quantidadeHashtag && j  < meio + quantidadeHashtag-1)
+                    if (j >= meio - quantidadeHashtag && j < meio + quantidadeHashtag - 1)
                     {
                         matriz[i, j] = 1;
                     }
@@ -47,7 +47,8 @@
 
             for (int i = 0; i < num; i++)
             {
-                for (int j = 0; j < num; j++) { 
+                for (int j = 0; j < num; j++)
+                {
                     if (matriz[i, j] == 1)
                     {
                         Console.Write("#");
@@ -59,7 +60,7 @@
                 }
                 Console.WriteLine("");
             }
-                    while (true);
+            while (true) ;
         }
 
     }
